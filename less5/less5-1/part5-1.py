@@ -32,6 +32,10 @@ print(li1_new)
 lst2 = [li2[i][i] for i in range(len(li2))]
 print(lst2)
 
-a = [lambda x: x*i for i in range(3)]
-for i in range(len(a)):
-    print(a[i](2))
+
+a=[lambda x:x*i for i in range(7)]
+
+print(a[6](4))
+print(id(a[3]))
+print(id(a[4]))
+# print(a[0](6))
